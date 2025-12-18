@@ -1,4 +1,4 @@
-# OpenRemote Custom Project Template
+# OpenRemote Custom Project Template - Active System Control (ACS) Template
 
 This repository is a template for custom projects; showing the recommended project structure and including `README` files in the `deployment` directory to provide details about how to customise each part.
 
@@ -16,14 +16,15 @@ In the `profile` directory you can find different Docker compose files, each ser
 mkdir -p openremote/profile && curl -L https://github.com/openremote/openremote/raw/refs/heads/master/profile/deploy.yml -o openremote/profile/deploy.yml
 ```
 
-
 ## Setup Tasks
+
 The following `OR_SETUP_TYPE` value(s) are supported:
 
-* `production` - Requires `CUSTOM_USER_PASSWORD` environment variable to be specified 
+* `production` - Requires `CUSTOM_USER_PASSWORD` environment variable to be specified
 
 Any other value will result in default setup.
 
 ## Encrypted files
+
 If any encrypted files are added to the project then you will need to specify the `GFE_PASSWORD` environment variable to be able to build the project and decrypt the
 files.
